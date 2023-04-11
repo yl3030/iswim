@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .best {
+            padding: 0 40px;
+            margin-bottom: 120px;
+        }
+        .best_inner {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .best_pic {
+            width: 65%;
+            order: 2;
+        }
+        .best_pic_inner {
+            width: 100%;
+            padding-bottom: 66.67%;
+            position: relative;
+        }
+        .best_pic_inner img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+        .best_text {
+            width: 35%;
+            background-color: #1869B2;
+            color: #fff;
+            text-align: center;
+            order: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .best_text h2 {
+            font-size: 45px;
+            margin: 0 0 65px;
+            width: 100%;
+            font-weight: 400;
+            letter-spacing: 0.5em;
+            position: relative;
+        }
+        .best_text h2::after {
+            position: absolute;
+            content: "";
+            width: 65px;
+            height: 2px;
+            background-color: #fff;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .best_text p {
+            width: 100%;
+            font-size: 28px;
+            width: 100%;
+            margin: 0 0 135px;
+            letter-spacing: 0.05em;
+        }
+        .best_text a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 10px 25px;
+            border: 1px solid #fff;
+            transition: 0.3s;
+        }
+        .best_text a:hover {
+            background-color: #fff;
+            color: #3282D2;
+        }
+        @media screen and (max-width: 1100px) {
+            .best {
+                padding: 0 20px;
+            }
+            .best_text h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            .best_text h2::after {
+                bottom: -16px;
+            }
+            .best_text p {
+                font-size: 13px;
+                margin-bottom: 25px;
+            }
+            .best_text a {
+                font-size: 18px;
+                color: #3282D2;
+                padding: 10px 45px;
+                background-color: #fff;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .best_pic {
+                order: 1;
+                width: 100%;
+            }
+            .best_text {
+                order: 2;
+                width: 100%;
+                padding: 20px 0 55px;
+            }
+        }
+    </style>
+    <div class="best">
+        <div class="best_inner">
+            <div class="best_pic">
+                <div class="best_pic_inner">
+                    <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_4719eb2a-fae9-4567-a908-33a9991ce190.png" alt="">
+                </div>
+            </div>
+            <div class="best_text">
+                <div class="best_text_inner">
+                    <h2>熱銷商品</h2>
+                    <p>BEST SELLERS</p>
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .banner {
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto 45px;
+        }
+        .banner img {
+            width: 100%;
+        }
+        .brand_page {
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px 160px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .brand_page_item {
+            padding: 0 10px;
+            margin-bottom: 20px;
+            width: 33.3333%;
+            box-sizing: border-box;
+        }
+        .brand_page_item a {
+            background-color: #ECECEC;
+            width: 100%;
+            padding-bottom: 100%;
+            display: block;
+            position: relative;
+        }
+        .brand_page_item a img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            transition: 0.3s;
+        }
+        .brand_page img.hover {
+            opacity: 0;
+        }
+        .brand_page_item a:hover {
+            background-color: #94C5E4;
+        }
+        .brand_page_item a:hover img.hover {
+            opacity: 1;
+        }
+        .brand_page_item a:hover img.normal {
+            opacity: 0;
+        }
+        .brand_page img.arena {
+            max-width: 190px !important;
+        }
+        .brand_page img.tyr {
+            max-width: 89px !important;
+        }
+        .brand_page img.swim {
+            max-width: 192px !important;
+        }
+        .brand_page img.kona {
+            max-width: 151px !important;
+        }
+        .brand_page img.drb {
+            max-width: 130px !important;
+        }
+        .brand_page img.dmc {
+            max-width: 186px !important;
+        }
+        .brand_page img.lnne {
+            max-width: 154px !important;
+        }
+        .brand_page img.barra {
+            max-width: 192px !important;
+        }
+        .brand_page img.mad {
+            max-width: 112px !important;
+        }
+        @media screen and (max-width: 767px) {
+            .brand_page {
+                padding: 0 5px 16px;
+            }
+            .brand_page_item {
+                padding: 0 5px;
+                margin-bottom: 10px;
+            }
+            .brand_page img.arena {
+                max-width: 113px !important;
+            }
+            .brand_page img.tyr {
+                max-width: 52px !important;
+            }
+            .brand_page img.swim {
+                max-width: 114px !important;
+            }
+            .brand_page img.kona {
+                max-width: 89px !important;
+            }
+            .brand_page img.drb {
+                max-width: 77px !important;
+            }
+            .brand_page img.dmc {
+                max-width: 110px !important;
+            }
+            .brand_page img.lnne {
+                max-width: 91px !important;
+            }
+            .brand_page img.barra {
+                max-width: 114px !important;
+            }
+            .brand_page img.mad {
+                max-width: 66px !important;
+            }
+        }
+    </style>
+    <div class="banner"><img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_bbb898a6-1011-413a-8044-aa05d1d73d88.png" alt=""></div>
+    <div class="brand_page">
+        <div class="brand_page_item">
+            <a href="">
+                <img class="arena hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_9b9b6e89-e874-4742-8b8e-0e7de5f19a15.png" alt="">
+                <img class="arena normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_ad746703-3f54-4e55-bea6-aa8ab9b128d4.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="tyr hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_728080ed-e706-46d2-93fb-3d09ba9a1e2f.png" alt="">
+                <img class="tyr normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_06396eaf-ab44-48d6-b7cf-ff5574411aca.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="swim hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_b4c264e9-5092-45b8-9948-48ff811924b4.png" alt="">
+                <img class="swim normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_4cb50860-64cf-4094-a7c4-a4bdcf9a0d65.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="kona hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_c6063530-7c39-442e-a8c9-96e998f0b588.png" alt="">
+                <img class="kona normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_a6b26a0c-7ae5-43ab-9e3a-bb2f13eb2017.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="drb hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_b579d908-3c47-438d-a167-3df4e3263cfe.png" alt="">
+                <img class="drb normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_37bc26d6-4a03-4f39-842a-16e68de8dd7e.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="dmc hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_564e5f4f-a839-4051-9d2d-fb1d55e39258.png" alt="">
+                <img class="dmc normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_406f7d31-db76-437d-92fd-55e65af5a52d.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="lnne hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_07a95e4b-f66a-45d4-b36a-1ec2f6256934.png" alt="">
+                <img class="lnne normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_950ef519-fbc0-4d6c-9dbb-ffbc1010e5f7.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="barra hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_a79e45a9-5529-4a51-97e6-46631eba08fa.png" alt="">
+                <img class="barra normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_282f71d1-6558-4b1e-9d74-2af5854bc1e6.png" alt="">
+            </a>
+        </div>
+        <div class="brand_page_item">
+            <a href="">
+                <img class="mad hover" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_02725d20-7ab1-4589-a0c8-ecbc4add6cbc.png" alt="">
+                <img class="mad normal" src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_4b40d251-41f6-4e9b-80ca-14b50727e4cc.png" alt="">
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

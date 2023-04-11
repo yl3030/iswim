@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .product {
+            margin: 120px 0;
+            padding: 0 10px;
+        }
+        .product_inner {
+            max-width: 1365px;
+            width: 100%;
+            margin: 0 auto;
+            background-image: url(//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_1b0b9d75-defa-4418-91f5-7573377744b1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product_item a {
+            border: 10px solid #fff;
+        }
+        .product_item:nth-child(1) {
+            width: 33.3333%;
+        }
+        .product_item:nth-child(1) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 56.82%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(2) {
+            width: 33.3333%;
+        }
+        .product_item:nth-child(2) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 56.82%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(3) {
+            width: 33.3333%;
+        }
+        .product_item:nth-child(3) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 56.82%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(4) {
+            width: 50%;
+        }
+        .product_item:nth-child(4) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 50.3%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(5) {
+            width: 50%;
+        }
+        .product_item:nth-child(5) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 50.3%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(6) {
+            width: 25%;
+        }
+        .product_item:nth-child(6) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 77.16%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(7) {
+            width: 25%;
+        }
+        .product_item:nth-child(7) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 77.16%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(8) {
+            width: 25%;
+        }
+        .product_item:nth-child(8) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 77.16%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item:nth-child(9) {
+            width: 25%;
+        }
+        .product_item:nth-child(9) a {
+            display: block;
+            width: 100%;
+            padding-bottom: 77.16%;
+            position: relative;
+            text-decoration: none;
+        }
+        .product_item a:hover .product_pic {
+            opacity: 0.4;
+        }
+        .product_item a:hover .product_text h4 {
+            color: #61A9D7;
+        }
+        .product_item a:hover .product_text p {
+            color: #61A9D7;
+        }
+        .product_item_content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .product_pic {
+            width: 80px;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+        .product_pic img {
+            width: 100%;
+            transition: 0.3s;
+        }
+        .product_text h4 {
+            font-size: 34px;
+            font-weight: 500;
+            margin: 0 0 5px 0;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .product_text p {
+            color: #fff;
+            font-size: 24px;
+            font-family: 'DIN Condensed';
+            margin: 0;
+            transition: 0.3s;
+        }
+        @media screen and (max-width: 1200px) {
+            .product_pic {
+                width: 70px;
+                margin-right: 5px;
+            }
+            .product_text h4 {
+                font-size: 28px;
+            }
+            .product_text p {
+                font-size: 18px;
+            }
+            .product_item a {
+                border-width: 5px !important;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .product_pic {
+                max-width: 80px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .product_text {
+                width: 100%;
+            }
+            .product_text h4 {
+                margin: 0;
+                font-size: 16px;
+                text-align: center;
+            }
+            .product_text p {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .product_item {
+                width: 33.3333% !important;
+            }
+            .product_item a {
+                padding-bottom: 100% !important;
+            }
+            .product_item:nth-child(6) a {
+                border-bottom: 10px solid #fff;
+                border-left: 10px solid #fff;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .product_pic {
+                width: 50%;
+            }
+        }
+    </style>
+    <div class="product">
+        <div class="product_inner">
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_43b32a38-189e-4dab-942b-bd178c5e491a.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>泳褲</h4>
+                            <p>MEN’S SWIMWEAR</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_de8a8fb4-0ac9-4dc8-816f-1044ea1b7c7d.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>泳帽</h4>
+                            <p>SWIMMING CAPS</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_8020217a-77ec-4b33-875a-c3a7aa9c0fc3.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>兒童專區</h4>
+                            <p>CHILDREN’S COLLECTION</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_9910fef0-810c-44db-82b9-1ddde446975e.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>泳鏡</h4>
+                            <p>SWIMMING GOGGLES</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_4e73c4ea-8060-4584-81b5-30e3bc330bc9.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>泳衣</h4>
+                            <p>WOMEN’S SWIMWEAR</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_a9fb2a69-5b7b-417d-9b43-4f48aafb6894.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>訓練器材</h4>
+                            <p>TRAINING EQUIPMENT</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_28b2c99f-8512-49b7-b430-b016061d8e1d.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>運動服飾</h4>
+                            <p>SPORTS WEAR</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_16f96036-67b8-4f00-9f16-e56b9f590af2.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>鐵人三項</h4>
+                            <p>TRIATHLON</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href="">
+                    <div class="product_item_content">
+                        <div class="product_pic">
+                            <img src="//cdn.cybassets.com/s/files/7054/ckeditor/pictures/content_0683fdd2-ab70-4982-ba44-0deed560f490.png" alt="">
+                        </div>
+                        <div class="product_text">
+                            <h4>配件</h4>
+                            <p>ACCESSORIES</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
