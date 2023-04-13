@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .contact_map {
+            width: 40%;
+            padding-bottom: calc(40% * 0.75);
+            position: relative;
+        }
+        .contact_map iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .contact_inform {
+            width: 60%;
+            padding-left: 40px;
+            box-sizing: border-box;
+        }
+        .contact_inform h2 {
+            color: #005EB0;
+            font-size: 26px;
+            font-weight: 900;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #707070;
+            margin-bottom: 30px;
+        }
+        .contact_inform ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #005EB0;
+        }
+        .contact_inform ul li {
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .contact_map, .contact_inform {
+                width: 100%;
+            }
+            .contact_map {
+                padding-bottom: 75%;
+            }
+            .contact_inform {
+                padding: 0;
+            }
+        }
+    </style>
+    <div class="contact">
+        <div class="contact_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7405881325244!2d121.4774537761327!3d25.008929239299224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a828aabd52bb%3A0x9135333b615a4baa!2zMjM15paw5YyX5biC5Lit5ZKM5Y2A5ZOh5bGx6LevNTA26Jmf!5e0!3m2!1szh-TW!2stw!4v1681410415961!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact_inform">
+            <h2>客服資訊</h2>
+            <ul>
+                <li>公司地址：新北市中和區員山路506號8樓</li>
+                <li>客服專線：(02)22267151 #120</li>
+                <li>客服信箱：service@iswimonline.com</li>
+                <li>服務時間：週一至週五/09:00-18:00（12:00-13:00休息）</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
